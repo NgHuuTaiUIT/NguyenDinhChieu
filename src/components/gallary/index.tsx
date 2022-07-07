@@ -9,7 +9,7 @@ import Title from "components/common/title";
 
 const arrImages = [img1, img2, img3, img4, img5, img6];
 
-export const Gallary = () => {
+const Gallary = () => {
   const items = arrImages.map((item, idx) => (
     <img
       src={item}
@@ -34,3 +34,4 @@ export const Gallary = () => {
     </>
   );
 };
+export default Gallary;

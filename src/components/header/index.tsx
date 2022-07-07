@@ -2,7 +2,7 @@ import headerImg from "assets/images/header-bg.png";
 import { Button } from "components/common/button";
 import { useTranslation } from "react-i18next";
 
-export const Header = () => {
+const Header = () => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -30,3 +30,4 @@ export const Header = () => {
     </>
   );
 };
+export default Header;

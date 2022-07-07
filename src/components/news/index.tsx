@@ -3,7 +3,7 @@ import { Button } from "components/common/button";
 import Carousel from "components/common/carousel";
 import { useTranslation } from "react-i18next";
 import { getNewsData } from "utils/getData";
-export const News = () => {
+const News = () => {
   // const [currentSlide, setCurrentSlide] = useState(0);
   const { t } = useTranslation();
 
@@ -37,3 +37,5 @@ export const News = () => {
     </section>
   );
 };
+
+export default News;

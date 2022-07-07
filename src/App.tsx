@@ -1,13 +1,12 @@
 import "./App.scss";
 import Copy from "./components/footer";
-import { Gallary } from "./components/gallary";
-import { Header } from "./components/header";
-import { News } from "./components/news";
+import Gallary from "./components/gallary";
+import Header from "./components/header";
+import News from "./components/news";
 import data from "./utils/data.json";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { lazy, Suspense } from "react";
-const VRTour = lazy(() => import("./components/vr-tour/index"));
+import VRTour from "./components/vr-tour/index";
 
 const lg_vn_test = {
   news: "Tin tức",
@@ -62,9 +61,7 @@ function App() {
   return (
     <div className="app bg-bg-cl">
       <Header />;
-      <Suspense fallback={<div>Page is Loading...</div>}>
-        <VRTour />
-      </Suspense>
+      <VRTour />
       <News />
       <Gallary />
       <Copy content="copy" />
