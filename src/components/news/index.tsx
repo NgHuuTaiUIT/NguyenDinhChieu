@@ -29,7 +29,7 @@ const News = () => {
     </>
   ));
   return (
-    <section>
+    <section id="news">
       <div className="max-w-4/5  m-auto text-center">
         <Title text="news" />
         <Carousel items={items} />

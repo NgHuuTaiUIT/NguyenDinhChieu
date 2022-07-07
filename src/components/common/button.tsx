@@ -14,13 +14,11 @@ export const Button = ({
   return (
     <div
       className={classNames(
-        "rounded-lg border-2 border-header-cl w-[256.24px] h-[87.74px] flex items-center justify-center m-auto text-[32px] font-normal",
+        "rounded-lg border-2 border-header-cl w-[256.24px] h-[87.74px] flex items-center justify-center m-auto text-[32px] leading-[50px] font-normal",
         style
       )}
       onClick={handleClick}>
-      <span className="text-header-cl text-[32px] leading-[50px]">
-        {t(text)}
-      </span>
+      <span className="text-header-cl">{t(text)}</span>
     </div>
   );
 };

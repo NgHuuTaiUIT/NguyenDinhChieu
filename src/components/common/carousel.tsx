@@ -7,7 +7,7 @@ const Carousel = ({ items }: { items: any[] }) => {
   const [itemsCarousel, setItemsCarousel] = useState(items);
   useEffect(() => {
     setItemsCarousel(items);
-  }, [items, window]);
+  }, [items]);
 
   return (
     <div className="max-w-[1196px] m-auto carousel">
