@@ -65,7 +65,7 @@ function App() {
       <VRTour />
       <News />
       <Gallary />
-      <Copy content="Copyright © 2022 Sgallery. All rights reserved" />
+      <Copy content="copy" />
     </div>
   );
 }
