@@ -9,12 +9,14 @@ export const VRTour = ({ style }: { style?: string }) => {
           Tham quan, khám phá cuộc đời và sự nghiệp của Nguyễn Đình Chiểu với
           công nghệ thực tế ảo 360 VR
         </p>
-        <iframe
-          id="iframe_tour_vr"
-          src="https://ngayhoivanhoadoc.hochiminhcity.gov.vn/vrtour/"
-          className="h-[1024px] max-w-[1440px] w-full m-auto "
-          title="iframe-vr-tour"
-        />
+        <div>
+          <iframe
+            id="iframe_tour_vr"
+            src="https://ngayhoivanhoadoc.hochiminhcity.gov.vn/vrtour/"
+            className="h-[650px] max-w-[1440px] w-full m-auto px-2"
+            title="iframe-vr-tour"
+          />
+        </div>
       </section>
     </>
   );
