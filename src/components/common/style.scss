@@ -1,0 +1,39 @@
+.carousel {
+  .alice-carousel__next-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    @media screen and (max-width: 992px) {
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+  .alice-carousel__prev-btn {
+    @extend .alice-carousel__next-btn;
+    left: 0;
+  }
+  .alice-carousel__next-btn-wrapper {
+    text-align: end !important;
+
+    p {
+      width: 85px;
+      height: 85px;
+      background-image: url("../../images/chevron-right.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 992px) {
+        width: 42px;
+        height: 42px;
+      }
+    }
+    span {
+      display: none;
+    }
+  }
+  .alice-carousel__prev-btn-wrapper {
+    @extend .alice-carousel__next-btn-wrapper;
+    transform: rotate(180deg);
+    right: 0;
+  }
+}

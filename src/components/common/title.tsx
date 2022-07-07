@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import classNames from "../utils/class-names";
+import classNames from "utils/class-names";
 
 const Title = ({
   text,

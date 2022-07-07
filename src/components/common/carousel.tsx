@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img1 from "../images/img-news-1.png";
+import img1 from "/images/img-news-1.png";
 
 const arrImages = [img1, img1, img1, img1, img1, img1];
 const Carousel = () => {
