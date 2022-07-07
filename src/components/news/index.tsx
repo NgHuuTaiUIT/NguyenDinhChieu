@@ -1,4 +1,4 @@
-import Carousel from "components/common/carouselv2";
+import Carousel from "components/common/carousel";
 import Title from "components/common//title";
 import { getNewsData } from "utils/getData";
 

@@ -1,4 +1,4 @@
-import headerImg from "images/header-bg.png";
+import headerImg from "assets/images/header-bg.png";
 
 export const Header = () => {
   return (
