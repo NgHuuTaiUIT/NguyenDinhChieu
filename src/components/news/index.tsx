@@ -1,27 +1,39 @@
 import Carousel from "components/common/carouselv2";
 import Title from "components/common//title";
-import img1 from "images/img-news-1.png";
-
-const arrImages = [img1, img1, img1, img1, img1, img1];
+import { getNewsData } from "utils/getData";
 
 export const News = () => {
-  const items = arrImages.map((slider, idx) => (
-    <img src={slider} alt="..." className="object-cover m-auto" />
+  // const [currentSlide, setCurrentSlide] = useState(0);
+
+  const newsData = getNewsData();
+  const items = newsData.news.map((data, idx) => (
+    <>
+      <img src={data.image_url} alt="..." className="object-cover m-auto" />
+      <a
+        className="text-[48px] leading-[81px] max-w-[970px] mx-auto font-[500] my-[36px] text-header-cl block"
+        target={"_blank"}
+        rel="noreferrer"
+        href={data.origin_url}>
+        {data.title}
+      </a>
+      <a
+        type="button"
+        target={"_blank"}
+        rel="noreferrer"
+        href={data.origin_url}>
+        <div className="rounded-lg border-2 border-header-cl w-[256.24px] h-[87.74px] flex items-center justify-center m-auto ">
+          <span className="text-header-cl text-[32px] leading-[50px]">
+            Xem thêm
+          </span>
+        </div>
+      </a>
+    </>
   ));
   return (
     <section>
       <div className="max-w-4/5  m-auto text-center">
         <Title text="Tin tức" />
         <Carousel items={items} />
-        <h2 className="text-[48px] leading-[81px] max-w-[970px] m-auto font-[500] my-[36px] text-header-cl">
-          Tham quan, khám phá cuộc đời và sự nghiệp của Nguyễn Đình Chiểu với
-          công nghệ thực tế ảo 360 VR
-        </h2>
-        <button className="rounded-lg border-2 border-header-cl w-[256.24px] h-[87.74px]">
-          <span className="text-header-cl text-[32px] leading-[50px]">
-            Xem thêm
-          </span>
-        </button>
       </div>
     </section>
   );

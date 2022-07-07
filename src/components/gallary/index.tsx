@@ -10,25 +10,24 @@ import Carousel from "components/common/carouselv2";
 const arrImages = [img1, img2, img3, img4, img5, img6];
 
 export const Gallary = () => {
-  const renderImage = () =>
-    arrImages.map((item, idx) => (
-      <img
-        src={item}
-        alt={`img-${idx}`}
-        key={`img-${idx}`}
-        className={`m-auto ${idx > 2 ? "md:mt-9" : "md:mt-0"}`}
-      />
-    ));
+  const items = arrImages.map((item, idx) => (
+    <img
+      src={item}
+      alt={`img-${idx}`}
+      key={`img-${idx}`}
+      className={`m-auto ${idx > 2 ? "md:mt-9" : "md:mt-0"}`}
+    />
+  ));
   return (
     <>
       <section id="gallary">
         <div className="max-w-[1200px] m-auto ">
           <Title text="Thư viện" />
           <div className=" flex-wrap justify-between xl:flex hidden">
-            {renderImage()}
+            {items}
           </div>
           <div className=" flex-wrap justify-between  xl:hidden block">
-            <Carousel items={renderImage()} />
+            <Carousel items={items} />
           </div>
         </div>
       </section>
