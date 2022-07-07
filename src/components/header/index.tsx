@@ -1,17 +1,30 @@
 import headerImg from "assets/images/header-bg.png";
+import { Button } from "components/common/button";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <section id="header">
-        <img src={headerImg} alt="bg" className="w-full " />
+        <div className="relative">
+          <img src={headerImg} alt="bg" className="w-full " />
+          <div className="absolute flex md:top-10 md:right-12 top-2 right-2">
+            <Button
+              text="EN"
+              style="sm:text-[29px] text-[15px] text-btn-cl sm:h-[60px] sm:w-[70px] h-[30px] w-[35px] mr-5 cursor-pointer"
+              handleClick={() => i18n.changeLanguage("en")}
+            />
+            <Button
+              text="VN"
+              style="sm:text-[29px] text-[15px] text-btn-cl sm:h-[60px] sm:w-[70px] h-[30px] w-[35px] cursor-pointer"
+              handleClick={() => i18n.changeLanguage("vi")}
+            />
+          </div>
+        </div>
         <p className="xl:w-1/2 w-[90%] m-auto mt-[72px]">
-          Cụ Nguyễn Đình Chiểu là một nhà thơ lớn, một thầy thuốc nổi tiếng
-          trong lịch sử nước ta. Sau khi cụ mất, lăng mộ của cụ dần đã được cây
-          thành khu đền thờ để tưởng niệm công lao của cụ. Ngày nay, khi có dịp
-          về Bến Tre, du khách có thể tranh thủ ghé qua ấp Giồng Cát, xã An Đức,
-          huyện Ba Tri, tỉnh Bến Tre để viếng khu đền thờ lăng mộ cụ Nguyễn Đình
-          Chiểu.
+          {t("header_content")}
         </p>
       </section>
     </>

@@ -1,14 +1,13 @@
 import Title from "components/common/title";
+import { useTranslation } from "react-i18next";
 
 export const VRTour = ({ style }: { style?: string }) => {
+  const { t } = useTranslation();
   return (
     <>
       <section id="vr-tour">
-        <Title text={"Triển lãm ảo"} />
-        <p className=" max-w-[90%] m-auto mb-[72px]">
-          Tham quan, khám phá cuộc đời và sự nghiệp của Nguyễn Đình Chiểu với
-          công nghệ thực tế ảo 360 VR
-        </p>
+        <Title text="vr" />
+        <p className=" max-w-[90%] m-auto mb-[72px]">{t("vr_content")}</p>
         <div>
           <iframe
             id="iframe_tour_vr"

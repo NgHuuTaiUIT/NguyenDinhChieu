@@ -5,10 +5,6 @@
     bottom: 50%;
     transform: translateY(50%);
     right: 0;
-    @media screen and (max-width: 992px) {
-      bottom: 50%;
-      transform: translateY(50%);
-    }
   }
   .alice-carousel__prev-btn {
     @extend .alice-carousel__next-btn;
@@ -24,7 +20,7 @@
       background-size: cover;
       background-repeat: no-repeat;
 
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 768px) {
         width: 42px;
         height: 42px;
       }
