@@ -1,7 +1,7 @@
 import Title from "components/common/title";
 import { useTranslation } from "react-i18next";
 
-export const VRTour = ({ style }: { style?: string }) => {
+const VRTour = ({ style }: { style?: string }) => {
   const { t } = useTranslation();
   return (
     <>
@@ -18,3 +18,5 @@ export const VRTour = ({ style }: { style?: string }) => {
     </>
   );
 };
+
+export default VRTour;
