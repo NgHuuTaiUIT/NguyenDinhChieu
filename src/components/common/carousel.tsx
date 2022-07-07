@@ -11,10 +11,7 @@ const Carousel = ({ items }: { items: any[] }) => {
 
   return (
     <div className="max-w-[1196px] m-auto carousel">
-      <AliceCarousel
-        disableDotsControls
-        infinite
-        items={itemsCarousel}></AliceCarousel>
+      <AliceCarousel disableDotsControls items={itemsCarousel}></AliceCarousel>
     </div>
   );
 };
