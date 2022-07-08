@@ -5,6 +5,7 @@ import img4 from "assets/images/img-4.png";
 import img5 from "assets/images/img-5.png";
 import img6 from "assets/images/img-6.png";
 import Carousel from "components/common/carousel";
+import Slider from "components/common/slider";
 import Title from "components/common/title";
 
 const arrImages = [img1, img2, img3, img4, img5, img6];

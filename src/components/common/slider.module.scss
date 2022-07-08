@@ -1,0 +1,59 @@
+.slides {
+  display: flex;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  transition: transform 0.5s ease 0s;
+}
+
+.navButtons {
+  width: 24px;
+  height: 24px;
+  margin: 0px 32px;
+  cursor: pointer;
+}
+
+.dotsControls {
+  display: block;
+  text-align: center;
+}
+
+.button-wrap {
+  position: absolute;
+  // bottom: 50px;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0;
+}
+
+.buttonPre {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 5px;
+  width: 85px;
+  height: 85px;
+  background-image: url("../../assets/images/chevron-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  @media screen and (max-width: 768px) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.buttonNext {
+  @extend .buttonPre;
+  right: 5px;
+  left: auto;
+  transform: rotate(0);
+}

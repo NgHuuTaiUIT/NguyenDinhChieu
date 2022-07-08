@@ -1,3 +1,4 @@
+@import "_variable";
 .carousel {
   li {
     width: 100% !important;
@@ -39,5 +40,70 @@
     @extend .alice-carousel__next-btn-wrapper;
     transform: rotate(180deg);
     right: 0;
+  }
+}
+
+body {
+  background: #2ecc71;
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 2em;
+}
+
+/* GENERAL BUTTON STYLING */
+
+.btn-language {
+  position: relative;
+  transition: all 0.5s;
+  &::before,
+  &::after {
+    content: "";
+    background: $header-cl;
+    height: 50%;
+    width: 0;
+    position: absolute;
+    z-index: 0;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    -webkit-transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+
+  &:hover {
+    > span {
+      color: #fff;
+      z-index: 2;
+    }
+    border-color: $header-cl;
+    &:before {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+
+    &:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+.active {
+  background: $header-cl;
+  > span {
+    color: #fff;
   }
 }
