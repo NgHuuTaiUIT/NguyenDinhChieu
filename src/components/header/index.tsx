@@ -1,7 +1,7 @@
 import headerImg from "assets/images/header-bg.png";
 import { Button } from "components/common/button";
 import { useTranslation } from "react-i18next";
-
+import style from "./style.module.scss";
 const Header = () => {
   const { t, i18n } = useTranslation();
 
