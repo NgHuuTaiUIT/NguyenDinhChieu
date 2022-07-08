@@ -19,7 +19,7 @@ const News = () => {
         rel="noreferrer"
         href={data.origin_url}>
         {/* {data.title} */}
-        {t(`news_content.0.title`)}
+        {t(`news_content.${idx}.title`)}
       </a>
       <a
         type="button"
