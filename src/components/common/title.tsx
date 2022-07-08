@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import classNames from "utils/class-names";
 
 const Title = ({
@@ -9,14 +10,17 @@ const Title = ({
   text?: string;
   style?: string;
   children?: ReactNode;
-}) => (
-  <h1
-    className={classNames(
-      style,
-      "text-[84px] text-center leading-[106px] font-semibold text-header-cl mb-[72px]"
-    )}>
-    {text}
-    {children}
-  </h1>
-);
+}) => {
+  const { t } = useTranslation();
+  return (
+    <h1
+      className={classNames(
+        style,
+        "text-[84px] text-center leading-[106px] font-semibold text-header-cl mb-[72px]"
+      )}>
+      {t(text ?? "")}
+      {children}
+    </h1>
+  );
+};
 export default Title;
