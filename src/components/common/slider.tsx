@@ -33,32 +33,19 @@ const Slider = React.memo<Props>(
         <div className={styles.slides}>
           <ul
             className={styles.list}
-            style={{ transform: `translateX(-${start * 33.333}%)` }}>
-            {slides.map(
-              (slide: any) =>
-                //   children ? children(slide) : null
-                slide
-            )}
+            style={{
+              transform: `translateX(-${start * (100 / slides.length)}%)`
+            }}>
+            {slides.map((slide: any) => slide)}
           </ul>
 
           {isControlsVisible && (
             <button onClick={onNextClick} className={styles.buttonNext} />
           )}
           {isControlsVisible && (
-            // <PrevButton onClick={onPrevClick} className={styles.navButtons} />
             <button onClick={onPrevClick} className={styles.buttonPre}></button>
           )}
         </div>
-
-        {/* {isControlsVisible && (
-          <div className={styles.dotsControls}>
-            <Dots
-              items={slides.length}
-              active={start}
-              onClick={(active: number) => setStart(active)}
-            />
-          </div>
-        )} */}
       </div>
     );
   }
