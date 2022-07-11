@@ -12,7 +12,11 @@ const News = () => {
   const newsData = getNewsData();
   const items = newsData.news.news_vi.map((data, idx) => (
     <li className="max-w-[1200px]" style={{ width }}>
-      <img src={data.image_url} alt="..." className="object-cover m-auto" />
+      <img
+        src={data.image_url}
+        alt="..."
+        className="object-cover m-auto lg:max-w-[770px] xl:max-w-[970px]"
+      />
       <a
         className="text-[48px] leading-[81px] max-w-[970px] mx-auto font-[500] my-[36px] text-header-cl block w-3/4 sm:w-[90%]"
         target={"_blank"}
