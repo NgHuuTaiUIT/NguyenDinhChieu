@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getData } from "utils/getData";
 import clone from "lodash/cloneDeep";
+import { useLocation } from "react-router-dom";
 interface NewsData {
   news_count: number;
   news: {
@@ -29,7 +30,7 @@ const News = () => {
   const { width } = useWindowSize();
   useEffect(() => {
     const api = async () => {
-      await fetch("assets/data/data.json", {
+      await fetch(`${process.env.PUBLIC_URL}/assets/data/data.json`, {
         method: "GET"
       })
         .then(res => res.json())
