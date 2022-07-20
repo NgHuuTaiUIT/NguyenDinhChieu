@@ -1,6 +1,5 @@
 import Title from "components/common//title";
 import { Button } from "components/common/button";
-import Carousel from "components/common/carousel";
 import Slider from "components/common/slider";
 import { useWindowSize } from "hooks/useWindowSize";
 import { useEffect, useState } from "react";
@@ -8,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { getData } from "utils/getData";
 import clone from "lodash/cloneDeep";
 import { useLocation } from "react-router-dom";
+import Carousel from "./carousel";
 interface NewsData {
   news_count: number;
   news: {
@@ -15,11 +15,13 @@ interface NewsData {
       title: string;
       origin_url: string;
       image_url: string;
+      description: string;
     }[];
     news_en: {
       title: string;
       origin_url: string;
       image_url: string;
+      description: string;
     }[];
   };
 }
@@ -52,14 +54,15 @@ const News = () => {
         title: string;
         origin_url: string;
         image_url: string;
+        description: string;
       },
       idx: number
     ) => (
-      <li className="max-w-[1440px]" style={{ width }} key={idx}>
+      <li className="max-w-[1440px]  px-3" style={{ width }} key={idx}>
         <img
           src={data.image_url}
           alt="..."
-          className="object-cover m-auto lg:max-w-[770px] xl:max-w-[970px]"
+          className="m-auto max-w-full min-h-[600px] object-fill"
         />
         <a
           className="text-[48px] leading-[81px] max-w-[1440px] mx-auto font-[500] my-[36px] text-header-cl block w-full sm:w-[100%]"
@@ -74,16 +77,20 @@ const News = () => {
           target={"_blank"}
           rel="noreferrer"
           href={data.origin_url}>
-          <Button text="btn_text" />
+          {/* <Button text="btn_text" /> */}
+          <p className="m-auto">
+          {t(`news_content.${idx}.description`)}
+        </p>
         </a>
       </li>
     )
   );
   return (
     <section id="news">
-      <div className="max-w-4/5  m-auto text-center">
+      <div className="max-w-4/5  m-auto text-center overflow-hidden">
         <Title text="news" />
-        <Slider slides={items ?? []} visibleItemsNumber={1}></Slider>
+        {/* <Slider slides={items ?? []} visibleItemsNumber={3}></Slider> */}
+        <Carousel slides={items ?? []}></Carousel>
       </div>
     </section>
   );

@@ -1,0 +1,34 @@
+.sliderWrapper {
+    button {
+      background-color: transparent;
+      height: 80px;
+      width: 80px;
+      background-image: url("../../assets/images/chevron-right.png") !important;
+
+      &::before {
+        display: none;
+      }
+      right: -80px;
+      top: 35%;
+  
+      background-size: cover !important;
+      &:first-child {
+        background-image: url("../../assets/images/chevron-left.png") !important;
+        left: -80px !important;
+        right: 0;
+      }
+    }
+  
+    button.slick-disabled {
+      background-image: none !important;
+    }
+  
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover {
+      color: transparent;
+      outline: none;
+      // background-image: url("../../assets/images/chevron-left.png") !important;
+    }
+  }
+  
