@@ -65,7 +65,7 @@ const News = () => {
           className="m-auto max-w-full min-h-[500px] object-fill"
         />
         <a
-          className="text-[48px] leading-[81px] max-w-[1440px] mx-auto font-[500] my-[36px] text-header-cl block w-full sm:w-[100%]"
+          className="text-[32px] max-w-[1440px] mx-auto font-[500] my-[16px] text-header-cl block w-full sm:w-[100%]"
           target={"_blank"}
           rel="noreferrer"
           href={data.origin_url}>
@@ -78,7 +78,7 @@ const News = () => {
           rel="noreferrer"
           href={data.origin_url}>
           {/* <Button text="btn_text" /> */}
-          <p className="m-auto">
+          <p className="m-auto " style={{fontSize:"20px"}}>
           {t(`news_content.${idx}.description`)}
         </p>
         </a>
