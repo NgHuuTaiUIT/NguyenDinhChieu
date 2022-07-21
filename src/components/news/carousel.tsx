@@ -17,7 +17,7 @@ const Carousel = ({ slides }: any) => {
       {
         breakpoint: 1440,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {
@@ -42,7 +42,7 @@ const Carousel = ({ slides }: any) => {
     ]
   };
   return (
-    <div className={"bg-primary-bg max-w-[1440px] m-auto " + styles.sliderWrapper}>
+    <div className={"bg-primary-bg xl:max-w-[1440px] w-[80%] m-auto " + styles.sliderWrapper}>
       <div>
         <Slider {...settings} >
           {/* {data.items.map((item, idx) => (
