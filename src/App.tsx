@@ -9,8 +9,9 @@ import VRTour from "./components/vr-tour/index";
 import { getData } from "utils/getData";
 import { cloneDeep } from "lodash";
 import { useGetData } from "hooks/useGetData";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-function App() {
+function AppRouter() {
   const data = useGetData();
   const lg_vn_test = {
     news: "Tin tức",
@@ -71,5 +72,13 @@ function App() {
     </div>
   );
 }
+
+function App() {
+  console.log(process.env.PUBLIC_URL);
+    return  <Router basename={process.env.PUBLIC_URL}>
+      <Route exact path={``} component={AppRouter} />   
+    </Router>
+
+} 
 
 export default App;
