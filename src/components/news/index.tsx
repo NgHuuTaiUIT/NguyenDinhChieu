@@ -62,7 +62,7 @@ const News = () => {
         <img
           src={data.image_url}
           alt="..."
-          className="m-auto max-w-full min-h-[600px] object-fill"
+          className="m-auto max-w-full min-h-[500px] object-fill"
         />
         <a
           className="text-[48px] leading-[81px] max-w-[1440px] mx-auto font-[500] my-[36px] text-header-cl block w-full sm:w-[100%]"
