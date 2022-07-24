@@ -1,4 +1,10 @@
 .sliderWrapper {
+    .sliderControl {
+      .slick-track {
+        transform: translate3d(0px, 0px, 0px) !important
+      }
+    }
+
     button {
       background-color: transparent;
       height: 80px;
