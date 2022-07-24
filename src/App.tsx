@@ -19,7 +19,7 @@ function AppRouter() {
     vr_content:
       "Tham quan, khám phá cuộc đời và sự nghiệp của Nguyễn Đình Chiểu với công nghệ thực tế ảo 360 VR",
 
-    gallery: "Thư viện",
+    gallery: "Thư viện hình ảnh",
     header_content:
       "Cụ Nguyễn Đình Chiểu là một nhà thơ lớn, một thầy thuốc nổi tiếng trong lịch sử nước ta. Sau khi cụ mất, lăng mộ của cụ dần đã được cây thành khu đền thờ để tưởng niệm công lao của cụ. Ngày nay, khi có dịp về Bến Tre, du khách có thể tranh thủ ghé qua ấp Giồng Cát, xã An Đức, huyện Ba Tri, tỉnh Bến Tre để viếng khu đền thờ lăng mộ cụ Nguyễn Đình Chiểu.",
     copy: "Bản quyền © 2022 SGallery.",
