@@ -62,10 +62,16 @@ const News = () => {
         <img
           src={data.image_url}
           alt="..."
-          className="m-auto max-w-full min-h-[500px] object-fill"
+          className="m-auto max-w-full min-h-[500px] object-cover"
         />
         <a
-          className="text-[32px] max-w-[1440px] mx-auto font-[500] my-[16px] text-header-cl block w-full sm:w-[100%]"
+          className="text-[32px] max-w-[1440px] mx-auto font-[500] my-[16px] text-header-cl block w-full sm:w-[100%] overflow-hidden text-ellipsis px-md-3"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: "2",
+            WebkitBoxOrient: "vertical"
+          }}
+          title={t(`news_content.${idx}.title`)}
           target={"_blank"}
           rel="noreferrer"
           href={data.origin_url}>
@@ -78,16 +84,24 @@ const News = () => {
           rel="noreferrer"
           href={data.origin_url}>
           {/* <Button text="btn_text" /> */}
-          <p className="m-auto " style={{fontSize:"20px"}}>
-          {t(`news_content.${idx}.description`)}
-        </p>
+          <p
+            className="m-auto overflow-hidden text-ellipsis"
+            style={{
+              fontSize: "20px",
+              display: "-webkit-box",
+              WebkitLineClamp: "4",
+              WebkitBoxOrient: "vertical"
+            }}
+            title={t(`news_content.${idx}.description`)}>
+            {t(`news_content.${idx}.description`)}
+          </p>
         </a>
       </li>
     )
   );
   return (
     <section id="news">
-      <div className="max-w-4/5  m-auto text-center overflow-hidden">
+      <div className="m-auto overflow-hidden text-center max-w-4/5">
         <Title text="news" />
         {/* <Slider slides={items ?? []} visibleItemsNumber={3}></Slider> */}
         <Carousel slides={items ?? []}></Carousel>
