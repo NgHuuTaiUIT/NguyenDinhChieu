@@ -1,12 +1,13 @@
 import Title from "components/common//title";
 import { Button } from "components/common/button";
-import Carousel from "components/common/carousel";
 import Slider from "components/common/slider";
 import { useWindowSize } from "hooks/useWindowSize";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { getData } from "utils/getData";
 import clone from "lodash/cloneDeep";
+import { useLocation } from "react-router-dom";
+import Carousel from "./carousel";
 interface NewsData {
   news_count: number;
   news: {
@@ -14,11 +15,13 @@ interface NewsData {
       title: string;
       origin_url: string;
       image_url: string;
+      description: string;
     }[];
     news_en: {
       title: string;
       origin_url: string;
       image_url: string;
+      description: string;
     }[];
   };
 }
@@ -29,7 +32,7 @@ const News = () => {
   const { width } = useWindowSize();
   useEffect(() => {
     const api = async () => {
-      await fetch("assets/data/data.json", {
+      await fetch(`${process.env.PUBLIC_URL}/assets/data/data.json`, {
         method: "GET"
       })
         .then(res => res.json())
@@ -51,17 +54,24 @@ const News = () => {
         title: string;
         origin_url: string;
         image_url: string;
+        description: string;
       },
       idx: number
     ) => (
-      <li className="max-w-[1440px]" style={{ width }} key={idx}>
+      <li className="max-w-[1440px]  px-3" style={{ width }} key={idx}>
         <img
           src={data.image_url}
           alt="..."
-          className="object-cover m-auto lg:max-w-[770px] xl:max-w-[970px]"
+          className="m-auto max-w-full min-h-[500px] object-cover"
         />
         <a
-          className="text-[48px] leading-[81px] max-w-[1440px] mx-auto font-[500] my-[36px] text-header-cl block w-full sm:w-[100%]"
+          className="text-[32px] max-w-[1440px] mx-auto font-[500] my-[16px] text-header-cl block w-full sm:w-[100%] overflow-hidden text-ellipsis px-md-3"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: "2",
+            WebkitBoxOrient: "vertical"
+          }}
+          title={t(`news_content.${idx}.title`)}
           target={"_blank"}
           rel="noreferrer"
           href={data.origin_url}>
@@ -73,16 +83,28 @@ const News = () => {
           target={"_blank"}
           rel="noreferrer"
           href={data.origin_url}>
-          <Button text="btn_text" />
+          {/* <Button text="btn_text" /> */}
+          <p
+            className="m-auto overflow-hidden text-ellipsis"
+            style={{
+              fontSize: "20px",
+              display: "-webkit-box",
+              WebkitLineClamp: "4",
+              WebkitBoxOrient: "vertical"
+            }}
+            title={t(`news_content.${idx}.description`)}>
+            {t(`news_content.${idx}.description`)}
+          </p>
         </a>
       </li>
     )
   );
   return (
     <section id="news">
-      <div className="max-w-4/5  m-auto text-center">
+      <div className="m-auto overflow-hidden text-center max-w-4/5">
         <Title text="news" />
-        <Slider slides={items ?? []} visibleItemsNumber={1}></Slider>
+        {/* <Slider slides={items ?? []} visibleItemsNumber={3}></Slider> */}
+        <Carousel slides={items ?? []}></Carousel>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -15,6 +16,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.18.0",
+    "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
@@ -26,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "publish": "webpack --mode production",
-    "serve": "webpack serve --mode development"
+    "serve": "webpack serve --mode development",
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": [
@@ -51,11 +54,13 @@
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
     "@types/lodash": "^4.14.182",
+    "@types/react-router-dom": "^5.3.3",
     "@types/react-slick": "^0.23.10",
     "@types/webpack-dev-server": "^4.7.2",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "electron": "^19.0.8",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.14",
