@@ -2,6 +2,26 @@ import { cloneDeep } from "lodash";
 import { useEffect, useState } from "react";
 
 interface NewsData {
+  header_content: {
+    content_en: {
+      news: string,
+      vr: string,
+      vr_content: string,
+      gallery: string,
+      header_content: string,
+      copy: string,
+      btn_text: string
+    },
+    content_vi: {
+      news: string,
+      vr: string,
+      vr_content: string,
+      gallery: string,
+      header_content: string,
+      copy: string,
+      btn_text: string
+    },
+  }
   news_count: number;
   news: {
     news_vi: {

@@ -1,120 +1,137 @@
 {
+  "header_content": {
+    "content_en": {
+      "news": "News",
+      "vr": "VR tour",
+      "vr_content": "Visit and discover the life and career of Nguyen Dinh Chieu with virtual reality technology 360 VR",
+      "gallery": "Gallery",
+      "header_content": "Nguyen Dinh Chieu is a great poet, a famous physician in the history of our country. After his death, his tomb was gradually turned into a temple to commemorate his merits. Today, when having the opportunity to return to Ben Tre, tourists can take advantage of visiting Giong Cat hamlet, An Duc commune, Ba Tri district, Ben Tre province to visit the temple and tomb of Nguyen Dinh Chieu.",
+      "copy": "Copyright © 2022 SGallery.",
+      "btn_text": "See more"
+    },
+    "content_vi": {
+      "news": "Tin tức",
+      "vr": "Triển lãm ảo",
+      "vr_content": "Tham quan, khám phá cuộc đời và sự nghiệp của Nguyễn Đình Chiểu với công nghệ thực tế ảo 360 VR",
+
+      "gallery": "Thư viện hình ảnh",
+      "header_content": "Cụ Nguyễn Đình Chiểu là một nhà thơ lớn, một thầy thuốc nổi tiếng trong lịch sử nước ta. Sau khi cụ mất, lăng mộ của cụ dần đã được xây thành khu đền thờ để tưởng niệm công lao của cụ. Ngày nay, khi có dịp về Bến Tre, du khách có thể tranh thủ ghé qua ấp Giồng Cát, xã An Đức, huyện Ba Tri, tỉnh Bến Tre để viếng khu đền thờ lăng mộ cụ Nguyễn Đình Chiểu.",
+      "copy": "Bản quyền © 2022 SGallery.",
+      "btn_text": "Xem thêm"
+    }
+  },
   "news_count": 3,
   "news": {
     "news_vi": [
       {
         "title": "Triển lãm \"Nguyễn Đình Chiểu - Cuộc đời và sự nghiệp\"",
         "origin_url": "https://drive.google.com/file/d/1WlEIowmqw8sPMmH5Y2sf7hQ0tBBngg8z/view?usp=sharing",
-        "image_url": "assets/images/NDC-1.png"
-        ,"description":"Tại di tích quốc gia đặc biệt Mộ và khu lưu niệm Nguyễn Đình Chiểu (xã An Đức, huyện Ba Tri, tỉnh Bến Tre), UBND tỉnh Bến Tre tổ chức triển lãm với chủ đề “Nguyễn Đình Chiểu – Cuộc đời và sự nghiệp”."
+        "image_url": "assets/images/NDC-1.png",
+        "description": "Tại di tích quốc gia đặc biệt Mộ và khu lưu niệm Nguyễn Đình Chiểu (xã An Đức, huyện Ba Tri, tỉnh Bến Tre), UBND tỉnh Bến Tre tổ chức triển lãm với chủ đề “Nguyễn Đình Chiểu – Cuộc đời và sự nghiệp”."
       },
       {
         "title": "Hướng tới kỷ niệm 200 năm Ngày sinh Danh nhân Nguyễn Đình Chiểu (1/7/1822 - 1/7/2022)",
         "origin_url": "https://thbt.vn/detail/thoi-su-toi-2862022.html",
-        "image_url": "assets/images/NDC-2.jpg"
-        ,"description":"Hoạt động trưng bày với chủ đề “Nguyễn Đình Chiểu – Cuộc đời và sự nghiệp” được xem là một hoạt động nổi bật nằm trong tuần lễ kỷ niệm hướng tới 200 năm Ngày sinh Danh nhân Nguyễn Đình Chiểu, kể cả trưng bày thật và ảo."
+        "image_url": "assets/images/NDC-2.jpg",
+        "description": "Hoạt động trưng bày với chủ đề “Nguyễn Đình Chiểu – Cuộc đời và sự nghiệp” được xem là một hoạt động nổi bật nằm trong tuần lễ kỷ niệm hướng tới 200 năm Ngày sinh Danh nhân Nguyễn Đình Chiểu, kể cả trưng bày thật và ảo."
       },
       {
         "title": "Trưng bày \"Nguyễn Đình Chiểu - Cuộc đời và sự nghiệp\"",
         "origin_url": "https://baodongkhoi.vn/video/xem-video/trung-bay-nguyen-dinh-chieu-cuoc-doi-va-su-nghiep-870.html",
-        "image_url": "assets/images/NDC-3.jpg"
-        ,"description":"Ngày 28-6-2022, Bộ Văn hóa, Thể thao và Du lịch (VHTT&DL), Tổ chức Giáo dục, Khoa học và Văn hóa Liên hợp quốc (UNESCO), UBND tỉnh đã phối hợp tổ chức lễ khai mạc hoạt động trưng bày “Nguyễn Đình Chiểu - Cuộc đời và sự nghiệp”, tại Di tích Quốc gia đặc biệt Mộ và Khu lưu niệm Nguyễn Đình Chiểu (xã An Đức, huyện Ba Tri)."
+        "image_url": "assets/images/NDC-3.jpg",
+        "description": "Ngày 28-6-2022, Bộ Văn hóa, Thể thao và Du lịch (VHTT&DL), Tổ chức Giáo dục, Khoa học và Văn hóa Liên hợp quốc (UNESCO), UBND tỉnh đã phối hợp tổ chức lễ khai mạc hoạt động trưng bày “Nguyễn Đình Chiểu - Cuộc đời và sự nghiệp”, tại Di tích Quốc gia đặc biệt Mộ và Khu lưu niệm Nguyễn Đình Chiểu (xã An Đức, huyện Ba Tri)."
       },
       {
         "title": "Triển lãm tái hiện cuộc đời và sự nghiệp danh nhân Nguyễn Đình Chiểu",
         "origin_url": "https://nhandantv.vn/trien-lam-tai-hien-cuoc-doi-va-su-nghiep-danh-nhan-nguyen-dinh-chieu-d205508.htm",
-        "image_url": "assets/images/NDC-4.jpg"
-        ,"description":"UBND tỉnh Bến Tre tái hiện cuộc đời và sự nghiệp Danh nhân Nguyễn Đình Chiểu qua trưng bày tại Di tích quốc gia đặc biệt Mộ và Khu lưu niệm Nguyễn Đình Chiểu. Tại sự kiện, có khoảng 300 hiện vật, tư liệu được chọn lọc trưng bày phong phú và đa dạng. "
+        "image_url": "assets/images/NDC-4.jpg",
+        "description": "UBND tỉnh Bến Tre tái hiện cuộc đời và sự nghiệp Danh nhân Nguyễn Đình Chiểu qua trưng bày tại Di tích quốc gia đặc biệt Mộ và Khu lưu niệm Nguyễn Đình Chiểu. Tại sự kiện, có khoảng 300 hiện vật, tư liệu được chọn lọc trưng bày phong phú và đa dạng. "
       },
       {
         "title": "Tái hiện cuộc đời và sự nghiệp Nguyễn Đình Chiểu bằng triển lãm",
         "origin_url": "https://thanhnien.vn/tai-hien-cuoc-doi-va-su-nghiep-nguyen-dinh-chieu-bang-trien-lam-post1472782.html?gidzl=j0gPHbWtgoUp4Pv0No-k8RGJc453UgKf-4l3G4ToeY6g6PL7IoQW8gHBm4CO9_1neagG4ZVP20HHN36gBW",
-        "image_url": "assets/images/NDC-5.jpg"
-        ,"description":"Đây là cơ hội giúp công chúng trong nước và quốc tế có dịp tiếp cận với tài liệu, hiện vật liên quan đến nhà thơ yêu nước, nhà văn hoá, nhà giáo, người thầy thuốc Nguyễn Đình Chiểu, mang tầm vóc về giá trị lịch sử, văn hóa, tư tưởng yêu nước và nhân cách sáng ngời; các giá trị nhân văn tốt đẹp và những thông điệp về tinh thần nghĩa hiệp của ông."
+        "image_url": "assets/images/NDC-5.jpg",
+        "description": "Đây là cơ hội giúp công chúng trong nước và quốc tế có dịp tiếp cận với tài liệu, hiện vật liên quan đến nhà thơ yêu nước, nhà văn hoá, nhà giáo, người thầy thuốc Nguyễn Đình Chiểu, mang tầm vóc về giá trị lịch sử, văn hóa, tư tưởng yêu nước và nhân cách sáng ngời; các giá trị nhân văn tốt đẹp và những thông điệp về tinh thần nghĩa hiệp của ông."
       },
       {
         "title": "Trưng bày hơn 300 hiện vật của danh nhân Nguyễn Đình Chiểu",
         "origin_url": "https://nld.com.vn/thoi-su/trung-bay-hon-300-hien-vat-cua-danh-nhan-nguyen-dinh-chieu-20220628105020594.htm?gidzl=Ul3kLOvH1YTzw-bJYKa4A7tgx5kI7miWCRAtMfON32XZuE5TcaCEAssoj5d9GbvuQxFa23V1bDv2YbS7BW",
-        "image_url": "assets/images/NDC-6.jpg"
-        ,"description":"Hơn 300 hiện vật của danh nhân Nguyễn Đình Chiểu đã được trưng bày tại Bến Tre với chủ đề \"Nguyễn Đình Chiểu - Cuộc đời và sự nghiệp\". Ngoài ra, tỉnh này còn xác lập kỷ lục thế giới với 222 món ăn chế biến từ dừa."
+        "image_url": "assets/images/NDC-6.jpg",
+        "description": "Hơn 300 hiện vật của danh nhân Nguyễn Đình Chiểu đã được trưng bày tại Bến Tre với chủ đề \"Nguyễn Đình Chiểu - Cuộc đời và sự nghiệp\". Ngoài ra, tỉnh này còn xác lập kỷ lục thế giới với 222 món ăn chế biến từ dừa."
       },
       {
         "title": "Triển lãm ảnh \"Nguyễn Đình Chiểu – Cuộc đời và sự nghiệp\"",
         "origin_url": "https://www.sggp.org.vn/trien-lam-anh-nguyen-dinh-chieu-cuoc-doi-va-su-nghiep-823501.html",
-        "image_url": "assets/images/NDC-7.jpg"
-        ,"description":"Theo Chủ tịch UBND tỉnh Bến Tre Trần Ngọc Tam, đây là 1 trong 3 hoạt động Bến Tre cam kết tổ chức với UNESCO. Lần triển lãm này, tỉnh Bến Tre lần đầu ứng dụng công nghệ thực tế ảo VR360 vào bảo tàng trưng bày, giúp du khách có thể trực tiếp tham quan tại khu vực triển lãm chỉ trên điện thoại hoặc các thiết bị thông minh."
+        "image_url": "assets/images/NDC-7.jpg",
+        "description": "Theo Chủ tịch UBND tỉnh Bến Tre Trần Ngọc Tam, đây là 1 trong 3 hoạt động Bến Tre cam kết tổ chức với UNESCO. Lần triển lãm này, tỉnh Bến Tre lần đầu ứng dụng công nghệ thực tế ảo VR360 vào bảo tàng trưng bày, giúp du khách có thể trực tiếp tham quan tại khu vực triển lãm chỉ trên điện thoại hoặc các thiết bị thông minh."
       },
       {
         "title": "Ngày hội trưng bày với chủ đề \"Nguyễn Đình Chiểu – Cuộc đời và sự nghiệp\"",
         "origin_url": "https://voh.com.vn/chinh-tri-xa-hoi/ngay-hoi-trung-bay-voi-chu-de-nguyen-dinh-chieu-cuoc-doi-va-su-nghiep-439621.html",
-        "image_url": "assets/images/NDC-8.jpg"
-        ,"description":"Đây là hoạt động nhân kỷ niệm 200 năm Ngày sinh Danh nhân Nguyễn Đình Chiểu (1/7/1822 – 1/7/2022), Ngày hội truyền thống văn hoá (1/7) và đón nhận bằng công nhận Danh nhân Nguyễn Đình Chiểu của Tổ chức UNESCO."
+        "image_url": "assets/images/NDC-8.jpg",
+        "description": "Đây là hoạt động nhân kỷ niệm 200 năm Ngày sinh Danh nhân Nguyễn Đình Chiểu (1/7/1822 – 1/7/2022), Ngày hội truyền thống văn hoá (1/7) và đón nhận bằng công nhận Danh nhân Nguyễn Đình Chiểu của Tổ chức UNESCO."
       },
       {
         "title": "Khai mạc Trưng bày Cuộc đời và sự nghiệp Nguyễn Đình Chiểu",
         "origin_url": "https://baodongkhoi.vn/khai-mac-trung-bay-cuoc-doi-va-su-nghiep-nguyen-dinh-chieu-28062022-a102261.html",
-        "image_url": "assets/images/NDC-9.jpg"
-        ,"description":"Nội dung trưng bày “Cuộc đời và sự nghiệp Danh nhân Nguyễn Đình Chiểu” gồm 4 chủ đề chính: Quê hương và gia đình; cuộc đời; nhà thơ lớn, nhà văn hóa lớn; Nguyễn Đình Chiểu sống mãi. "
+        "image_url": "assets/images/NDC-9.jpg",
+        "description": "Nội dung trưng bày “Cuộc đời và sự nghiệp Danh nhân Nguyễn Đình Chiểu” gồm 4 chủ đề chính: Quê hương và gia đình; cuộc đời; nhà thơ lớn, nhà văn hóa lớn; Nguyễn Đình Chiểu sống mãi. "
       }
     ],
     "news_en": [
       {
         "title": "Exhibition \"Nguyen Đinh Chieu - Life and Achievements\"",
         "origin_url": "https://drive.google.com/file/d/1WlEIowmqw8sPMmH5Y2sf7hQ0tBBngg8z/view?usp=sharing",
-        "image_url": "assets/images/NDC-1.png"
-        ,"description":"At the special national monument, Tomb and memorial area of Nguyen Dinh Chieu (An Duc commune, Ba Tri district, Ben Tre province), the People's Committee of Ben Tre province organized an exhibition with the theme \"Nguyen Dinh Chieu - Life and Achievements \"."
+        "image_url": "assets/images/NDC-1.png",
+        "description": "At the special national monument, Tomb and memorial area of Nguyen Dinh Chieu (An Duc commune, Ba Tri district, Ben Tre province), the People's Committee of Ben Tre province organized an exhibition with the theme \"Nguyen Dinh Chieu - Life and Achievements \"."
       },
       {
         "title": "Towards the 200th anniversary of the birth of the famous Nguyen Dinh Chieu (1/7/1822 - 1/7/2022)",
         "origin_url": "https://thbt.vn/detail/thoi-su-toi-2862022.html",
-        "image_url": "assets/images/NDC-2.jpg"
-        ,"description":"The exhibition with the theme \"Nguyen Dinh Chieu - Life and Achievements\" is considered as a prominent activity in the week to celebrate the 200th anniversary of the birth of Nguyen Dinh Chieu, including the actual display and virtual."
+        "image_url": "assets/images/NDC-2.jpg",
+        "description": "The exhibition with the theme \"Nguyen Dinh Chieu - Life and Achievements\" is considered as a prominent activity in the week to celebrate the 200th anniversary of the birth of Nguyen Dinh Chieu, including the actual display and virtual."
       },
       {
         "title": "Exhibition \"Nguyen Đinh Chieu - Life and Achievements\"",
         "origin_url": "https://baodongkhoi.vn/video/xem-video/trung-bay-nguyen-dinh-chieu-cuoc-doi-va-su-nghiep-870.html",
-        "image_url": "assets/images/NDC-3.jpg"
-        ,"description":"On June 28, 2022, the Ministry of Culture, Sports and Tourism, the United Nations Educational, Scientific and Cultural Organization (UNESCO) and the Provincial People's Committee coordinated to organize the opening ceremony of the exhibition \"Nguyen Dinh Chieu - Life and Achievements\", at the special National Monument Nguyen Dinh Chieu Tomb and Memorial (An Duc commune, Ba Tri district)."
+        "image_url": "assets/images/NDC-3.jpg",
+        "description": "On June 28, 2022, the Ministry of Culture, Sports and Tourism, the United Nations Educational, Scientific and Cultural Organization (UNESCO) and the Provincial People's Committee coordinated to organize the opening ceremony of the exhibition \"Nguyen Dinh Chieu - Life and Achievements\", at the special National Monument Nguyen Dinh Chieu Tomb and Memorial (An Duc commune, Ba Tri district)."
       },
       {
         "title": "The exhibition recreates the life and achievements of famous celebrity Nguyen Dinh Chieu",
         "origin_url": "https://nhandantv.vn/trien-lam-tai-hien-cuoc-doi-va-su-nghiep-danh-nhan-nguyen-dinh-chieu-d205508.htm",
-        "image_url": "assets/images/NDC-4.jpg"
-        ,"description":"The People's Committee of Ben Tre province recreated the life and achievements of famous celebrity Nguyen Dinh Chieu through the display at the special National Monument, Tomb and Memorial area of Nguyen Dinh Chieu. At the event, there were about 300 artifacts and documents selected for display vividly. "
-
+        "image_url": "assets/images/NDC-4.jpg",
+        "description": "The People's Committee of Ben Tre province recreated the life and achievements of famous celebrity Nguyen Dinh Chieu through the display at the special National Monument, Tomb and Memorial area of Nguyen Dinh Chieu. At the event, there were about 300 artifacts and documents selected for display vividly. "
       },
       {
         "title": "Exhibition: Recreate the life and achievements of Nguyen Dinh Chieu",
         "origin_url": "https://thanhnien.vn/tai-hien-cuoc-doi-va-su-nghiep-nguyen-dinh-chieu-bang-trien-lam-post1472782.html?gidzl=j0gPHbWtgoUp4Pv0No-k8RGJc453UgKf-4l3G4ToeY6g6PL7IoQW8gHBm4CO9_1neagG4ZVP20HHN36gBW",
-        "image_url": "assets/images/NDC-5.jpg"
-        ,"description":"This is an opportunity to help the people inside and out side the country have access to documents and artifacts related to patriotic poet, culturalist, teacher, and physician Nguyen Dinh Chieu, which are of great value: history, culture, patriotic thought and bright personality; his good humanistic values and messages about his chivalry."
-
+        "image_url": "assets/images/NDC-5.jpg",
+        "description": "This is an opportunity to help the people inside and out side the country have access to documents and artifacts related to patriotic poet, culturalist, teacher, and physician Nguyen Dinh Chieu, which are of great value: history, culture, patriotic thought and bright personality; his good humanistic values and messages about his chivalry."
       },
       {
         "title": "Displaying more than 300 artifacts of famous celebrity Nguyen Dinh Chieu",
         "origin_url": "https://nld.com.vn/thoi-su/trung-bay-hon-300-hien-vat-cua-danh-nhan-nguyen-dinh-chieu-20220628105020594.htm?gidzl=Ul3kLOvH1YTzw-bJYKa4A7tgx5kI7miWCRAtMfON32XZuE5TcaCEAssoj5d9GbvuQxFa23V1bDv2YbS7BW",
-        "image_url": "assets/images/NDC-6.jpg"
-        ,"description":"More than 300 artifacts of famous celebrity Nguyen Dinh Chieu were displayed in Ben Tre with the theme \"Nguyen Dinh Chieu - Life and Achievements\". In addition, this province also established a world record with 222 dishes made from coconut."
-
+        "image_url": "assets/images/NDC-6.jpg",
+        "description": "More than 300 artifacts of famous celebrity Nguyen Dinh Chieu were displayed in Ben Tre with the theme \"Nguyen Dinh Chieu - Life and Achievements\". In addition, this province also established a world record with 222 dishes made from coconut."
       },
       {
         "title": "Photo exhibition \"Nguyen Dinh Chieu – Life and Achievements\"",
         "origin_url": "https://www.sggp.org.vn/trien-lam-anh-nguyen-dinh-chieu-cuoc-doi-va-su-nghiep-823501.html",
-        "image_url": "assets/images/NDC-7.jpg"
-        ,"description":"According to Chairman of Ben Tre Provincial People's Committee Tran Ngoc Tam, this is one of three activities that Ben Tre has committed to organize with UNESCO. In this exhibition, Ben Tre province applied VR360 virtual reality technology to the museum for the first time, allowing visitors to directly visit the exhibition area on smartphones or smart devices."
-
+        "image_url": "assets/images/NDC-7.jpg",
+        "description": "According to Chairman of Ben Tre Provincial People's Committee Tran Ngoc Tam, this is one of three activities that Ben Tre has committed to organize with UNESCO. In this exhibition, Ben Tre province applied VR360 virtual reality technology to the museum for the first time, allowing visitors to directly visit the exhibition area on smartphones or smart devices."
       },
       {
         "title": "Exhibition \"Nguyen Dinh Chieu - Life and Achievements\"",
         "origin_url": "https://voh.com.vn/chinh-tri-xa-hoi/ngay-hoi-trung-bay-voi-chu-de-nguyen-dinh-chieu-cuoc-doi-va-su-nghiep-439621.html",
-        "image_url": "assets/images/NDC-8.jpg"
-        ,"description":"This is an activity on the occasion of the 200th anniversary of the birth of famous celebrity Nguyen Dinh Chieu (1/7/1822 - 1/7/2022), Cultural Traditional Festival (1/7) and receiving the recognition certificate of the famous Nguyen Dinh Chieu from UNESCO."
+        "image_url": "assets/images/NDC-8.jpg",
+        "description": "This is an activity on the occasion of the 200th anniversary of the birth of famous celebrity Nguyen Dinh Chieu (1/7/1822 - 1/7/2022), Cultural Traditional Festival (1/7) and receiving the recognition certificate of the famous Nguyen Dinh Chieu from UNESCO."
       },
       {
         "title": "Opening Ceremony of The Exhibition of Nguyen Dinh Chieu's Life and Achievements",
         "origin_url": "https://baodongkhoi.vn/khai-mac-trung-bay-cuoc-doi-va-su-nghiep-nguyen-dinh-chieu-28062022-a102261.html",
-        "image_url": "assets/images/NDC-9.jpg"
-        ,"description":"The theme of the exhibition is \"Life and achievements of the famous celebrity Nguyen Dinh Chieu\", including 4 main themes: Homeland and family; life; great poets, great culturalists; Nguyen Dinh Chieu's eternal life."
+        "image_url": "assets/images/NDC-9.jpg",
+        "description": "The theme of the exhibition is \"Life and achievements of the famous celebrity Nguyen Dinh Chieu\", including 4 main themes: Homeland and family; life; great poets, great culturalists; Nguyen Dinh Chieu's eternal life."
       }
     ]
   }
